@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5efe4">
+  <meta name="description" content="Una pausa rica, hecha con cariño. Descubre nuestra cafetería y conoce al asistente virtual.">
+  <title>Casa Tostada — Café hecho con cariño</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Casa Tostada, inicio">
+      <span class="brand-mark" aria-hidden="true">ct.</span>
+      <span>casa tostada<small>CAFÉ DE BARRIO</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+      <a href="#carta">La carta</a><a href="#historia">Nuestra casa</a><a href="#visitanos">Visítanos</a>
+      <button class="nav-cta" data-open-chat>Hablemos <span aria-hidden="true">↗</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="sparkle">✳</span> Un buen día empieza aquí</p>
+        <h1>Tu pausa<br>favorita <em>del día.</em></h1>
+        <p class="hero-text">Café rico, pan recién hecho y ese ratito que necesitabas. Pasa, ponte cómodo y quédate lo que quieras.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#carta">Explora la carta <span>↓</span></a><button class="text-link" data-open-chat>¿Tienes una pregunta? <span>↗</span></button></div>
+        <div class="hero-note"><span class="note-icon">☕</span><span><strong>Hecho con calma.</strong><br>Disfrutado sin prisa.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración de una taza de café y granos tostados" role="img">
+        <div class="sun"></div><div class="art-caption">BUEN CAFÉ<br>BUENA COMPAÑÍA</div>
+        <div class="coffee-cup"><div class="cup-steam steam-one"></div><div class="cup-steam steam-two"></div><div class="coffee"></div><div class="cup-handle"></div><div class="cup-body"><span>ct.</span></div><div class="saucer"></div></div>
+        <span class="bean bean-one">✦</span><span class="bean bean-two">✳</span><span class="bean bean-three">✦</span>
+        <div class="art-sticker">una taza<br>y todo mejora <span>♥</span></div>
+      </div>
+      <div class="hero-bottom"><span>CAFÉ DE ESPECIALIDAD</span><span class="bottom-line"></span><span>UN LUGAR PARA QUEDARTE</span></div>
+    </section>
+
+    <section class="menu-section section-pad" id="carta">
+      <div class="section-heading"><div><p class="eyebrow">De nuestra barra a tu mesa</p><h2>Un antojo<br><em>bien servido.</em></h2></div><p class="section-intro">La carta de ejemplo ya tiene su lugar. Aquí pondremos tus bebidas, platillos, ingredientes y precios confirmados.</p></div>
+      <div class="menu-grid">
+        <article class="menu-card card-coffee"><span class="card-number">01 / CAFÉ</span><div class="card-illustration cup-icon">☕</div><h3>Café con carácter</h3><p>Espresso, filtrados y bebidas para acompañar tu momento.</p><span class="card-arrow">↗</span></article>
+        <article class="menu-card card-bakery"><span class="card-number">02 / HORNEADO</span><div class="card-illustration bakery-icon">✿</div><h3>Recién salido</h3><p>Algo dulce o salado siempre queda bien con café.</p><span class="card-arrow">↗</span></article>
+        <article class="menu-card card-brunch"><span class="card-number">03 / PARA PICAR</span><div class="card-illustration brunch-icon">◒</div><h3>Un bocado feliz</h3><p>Opciones sencillas para una pausa que sabe a mucho.</p><span class="card-arrow">↗</span></article>
+      </div>
+      <p class="demo-note">La carta y las descripciones son provisionales; no representan productos, precios ni ingredientes confirmados.</p>
+    </section>
+
+    <section class="story-section" id="historia"><div class="story-art"><div class="story-circle"><span>BUENOS DÍAS<br>COMIENZAN<br>CON CAFÉ</span><b>✳</b></div><span class="story-doodle">desde temprano,<br>con cariño</span></div><div class="story-copy"><p class="eyebrow">Más que una taza</p><h2>Un rinconcito<br>para <em>sentirte en casa.</em></h2><p>Creemos en las conversaciones sin prisa, en compartir algo rico y en hacer espacio para los pequeños momentos. Esta es una historia de muestra, lista para contar la historia real de tu cafetería.</p><a href="#visitanos" class="under-link">Conoce nuestra casa <span>↗</span></a></div></section>
+
+    <section class="visit-section section-pad" id="visitanos"><div class="visit-copy"><p class="eyebrow">Aquí te esperamos</p><h2>Tu mesa<br>está <em>por aquí.</em></h2><p>Agregaremos la dirección, horarios y formas de llegar cuando nos compartas los datos oficiales.</p><button class="button button-light" data-open-chat>Pregúntale a nuestro asistente <span>↗</span></button></div><div class="visit-card"><div class="map-grid" aria-hidden="true"><span class="map-road road-a"></span><span class="map-road road-b"></span><span class="map-road road-c"></span><span class="map-park"></span><span class="map-pin">✳</span></div><div class="visit-card-label"><span>📍</span><div><strong>La ubicación va aquí</strong><small>Dirección pendiente de confirmar</small></div></div></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">ct.</span><span>casa tostada<small>CAFÉ DE BARRIO</small></span></a><p>Una pausa rica, hecha con cariño.</p><span class="footer-copy">© <span id="year"></span> Casa Tostada · Sitio de demostración</span></footer>
+
+  <button class="chat-launcher" id="chat-launcher" aria-label="Abrir chat con el asistente" aria-expanded="false" aria-controls="chat-panel">
+    <span class="launcher-avatar" aria-hidden="true"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#f4c76b"/><path d="M15 28c0-11 7-18 18-18 10 0 17 7 17 18v8c0 9-7 16-17 16S15 45 15 36z" fill="#70452f"/><path d="M20 25c2-9 7-12 14-12 8 0 13 5 14 13-7-1-12-4-15-8-3 4-7 6-13 7" fill="#f8eee0"/><circle cx="26" cy="33" r="2" fill="#fff"/><circle cx="39" cy="33" r="2" fill="#fff"/><path d="M28 42c3 3 7 3 10 0" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M11 36c-4-1-5-7-1-9 2-1 4 0 5 2M51 29c5-2 8 4 4 7" fill="none" stroke="#70452f" stroke-width="4" stroke-linecap="round"/><path d="M21 53l-4 6 12-5M44 52l5 6-12-4" fill="#70452f"/></svg></span>
+    <span class="launcher-label">¿Te ayudo?</span><span class="launcher-close" aria-hidden="true">×</span>
+  </button>
+
+  <section class="chat-panel" id="chat-panel" aria-label="Chat con el asistente de Casa Tostada" aria-hidden="true">
+    <header class="chat-header"><div class="bot-avatar-small" aria-hidden="true">☕</div><div><strong>Un cafecito contigo</strong><span><i></i> Asistente virtual</span></div><button class="chat-close" aria-label="Cerrar chat">×</button></header>
+    <div class="chat-messages" id="chat-messages" aria-live="polite"><div class="message bot-message">¡Hola! ☀️ Soy el asistente de Casa Tostada. ¿Qué te gustaría saber?</div><div class="quick-replies"><button data-reply="Quiero ver el menú">Ver el menú</button><button data-reply="¿Dónde están?">Ubicación</button><button data-reply="¿Cuál es su horario?">Horarios</button></div></div>
+    <form class="chat-form" id="chat-form"><label class="sr-only" for="chat-input">Escribe tu mensaje</label><input id="chat-input" type="text" placeholder="Escribe tu mensaje…" autocomplete="off"><button aria-label="Enviar mensaje" type="submit">↑</button></form>
+    <p class="chat-disclaimer">Asistente de demostración · Información del negocio pendiente de configurar</p>
+  </section>
+</body>
+</html>
